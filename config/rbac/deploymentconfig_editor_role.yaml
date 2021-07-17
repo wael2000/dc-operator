@@ -1,0 +1,24 @@
+# permissions for end users to edit deploymentconfigs.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: deploymentconfig-editor-role
+rules:
+- apiGroups:
+  - app.stakater.com
+  resources:
+  - deploymentconfigs
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - app.stakater.com
+  resources:
+  - deploymentconfigs/status
+  verbs:
+  - get

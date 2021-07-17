@@ -1,0 +1,8 @@
+apiVersion: app.stakater.com/v1
+kind: DeploymentConfig
+metadata:
+  name: deploymentconfig-sample
+spec:
+  # Add fields here
+  replicas: 2
+  message: "Hello Deployment Config"

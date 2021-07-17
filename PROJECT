@@ -1,0 +1,19 @@
+domain: stakater.com
+layout:
+- go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: dc
+repo: github.com/wael2000/dc-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: stakater.com
+  group: app
+  kind: DeploymentConfig
+  path: github.com/wael2000/dc-operator/api/v1
+  version: v1
+version: "3"

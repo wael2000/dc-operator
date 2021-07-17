@@ -1,0 +1,34 @@
+
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  creationTimestamp: null
+  name: manager-role
+rules:
+- apiGroups:
+  - app.stakater.com
+  resources:
+  - deploymentconfigs
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - app.stakater.com
+  resources:
+  - deploymentconfigs/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - app.stakater.com
+  resources:
+  - deploymentconfigs/status
+  verbs:
+  - get
+  - patch
+  - update
