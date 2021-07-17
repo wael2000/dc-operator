@@ -69,7 +69,7 @@ We should now see the /api, config, and /controllers directories.
 
 # Screenshots
 output  
-![Screenshot](images/screen03.png)
+![Screenshot](images/Screen03.png)
 
 # Check generated controller file
 
@@ -109,7 +109,7 @@ Thanks to our comment markers, observe that we now have a newly generated CRD ya
 
 # Screenshots
 output  
-![Screenshot](images/screen04.png)
+![Screenshot](images/Screen04.png)
 
 # Create DeploymentConfig CRD in K8s Cluster
 ```
